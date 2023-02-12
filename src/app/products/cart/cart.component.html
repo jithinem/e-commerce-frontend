@@ -1,0 +1,122 @@
+<div class="container" *ngIf="cartitem.length==0">
+    <div class="row">
+        <div class="col">
+            <img src="https://www.qrcardboard.com/images/cart.gif?v=01" alt="">
+            <button class="btn btn-primary m-3" routerLink="/">Shop now</button>
+            <h3>Your cart is empty</h3>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" *ngIf="cartitem.length!=0">
+    <div class="row">
+        <div class="col">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td>44</td>
+                            <td>55</td>
+                            <td>66</td>
+                        </tr>
+                        <tr *ngFor="let product of cartitem let i=index">
+                            <td>i+1</td>
+                            <td>{{product.title}}</td>
+                            <td><img [src]=product.image alt="" width="100px"></td>
+                            <td>{{product.description}}</td>
+                            <td>{{product.price}}</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+              
+                <div class="m-5" style="float: right;">
+                    <button class="btn btn-danger m-3">Empty cart</button>
+                    <button class="btn btn-success m-3">Shop more</button>
+                    <button class="btn btn-warning m-3">Check out</button>
+                    <b>Grand total: 600</b>
+                </div>
+    
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <p>cart works!</p> -->
+<!-- <div class="container" >
+    <div class="row">
+        <div class="col">
+            <div class="cart1" *ngIf="cartitem.length==0"> -->
+                            <!-- empty cart -->
+            <!-- <div class="container" >
+                <div class="row">
+                    <div class="col">
+                        <img src="https://www.qrcardboard.com/images/cart.gif?v=01" alt="">
+                        <button class="btn btn-primary m-3" routerLink="/">Shop now</button>
+                        <h3>Your cart is empty</h3>
+                    </div>
+                </div>
+            </div>
+            </div> -->
+          <!-- table for cart -->
+          <!-- <div class="cart1" *ngIf="cartitem.length!=0">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>11</td>
+                        <td>22</td>
+                        <td>33</td>
+                        <td>44</td>
+                        <td>55</td>
+                        <td>66</td>
+                    </tr>
+                    <tr *ngFor="let product of cartitem let i=index">
+                        <td>i+1</td>
+                        <td>{{product.title}}</td>
+                        <td><img [src]=product.image alt="" width="100px"></td>
+                        <td>{{product.description}}</td>
+                        <td>{{product.price}}</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+          
+            <div class="m-5" style="float: right;">
+                <button class="btn btn-danger m-3">Empty cart</button>
+                <button class="btn btn-success m-3">Shop more</button>
+                <button class="btn btn-warning m-3">Check out</button>
+                <b>Grand total: 600</b>
+            </div>
+        </div>
+    </div>
+</div> -->

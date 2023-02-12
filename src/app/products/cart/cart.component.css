@@ -1,0 +1,5 @@
+table,tr,th,td{
+    border: 2px black solid;
+    color: black;
+    padding: 10px;
+}

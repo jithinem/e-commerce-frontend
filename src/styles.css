@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Noto+Serif+Telugu:wght@100&family=Open+Sans:wght@300;500&family=Poppins:wght@100&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+.all{
+    margin: 50px;
+}
+.cart1{
+    margin: 100px;
+}
+footer{
+    width: 100%;
+}
